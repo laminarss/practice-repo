@@ -5,17 +5,20 @@
 }
 
 .container {
-   display: flex;
-   flex-direction: column;
    line-height: 40px;
 }
 
 section, footer {
-   margin: 1vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 50em;
+   margin: 3em;
 }
 
 #nav-bar {
-   width: 100vw;
+   width: 100%;
    position: sticky;
    top: 0;
    left: 0;
@@ -30,7 +33,6 @@ section, footer {
 
 h1 {
    font-size: 1.2em;
-   cursor: pointer;
 }
 
 h2 {
@@ -49,14 +51,8 @@ nav a:hover, nav a:active {
    border-bottom: 2px solid #eee;
 }
 
-/* section:first-child {
-   text-decoration: underline;
-} */
-
 #fav-food {
-   display: flex;
-   flex-direction: column;
-   margin: 25px 1vw 25px 10px;
+   flex-wrap: wrap;
 }
 
 #fav-food ul {
@@ -73,7 +69,8 @@ nav a:hover, nav a:active {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 45vw;
+   width: 38vw;
+   max-width: 20em;
    height: 25vw;
    margin: 1vw;
    background-color: #cacaca;
